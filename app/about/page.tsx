@@ -64,7 +64,7 @@ export default function AboutPage() {
 
               <div className="lg:w-1/2 animate-fade-in-up animation-delay-300">
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Welcome to OzBigWinAustralia.com, where fortune meets innovation! We are Australia's leading lottery
+                  Welcome to ozbigwinau.com, where fortune meets innovation! We are Australia's leading lottery
                   platform, powered by a passionate team of gaming experts, technology pioneers, and dedicated support
                   specialists who are committed to transforming your lottery experience:
                 </p>
