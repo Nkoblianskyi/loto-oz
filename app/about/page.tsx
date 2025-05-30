@@ -6,7 +6,6 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Shield, Award, Heart, Check, Star, Clock, Users } from "lucide-react"
-import Image from "next/image"
 import { AnimatedLogo } from "@/components/animated-logo"
 
 export default function AboutPage() {
@@ -65,7 +64,7 @@ export default function AboutPage() {
 
               <div className="lg:w-1/2 animate-fade-in-up animation-delay-300">
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Welcome to ozbigwinau.com, where fortune meets innovation! We are Australia's leading lottery
+                  Welcome to OzBigWinAustralia.com, where fortune meets innovation! We are Australia's leading lottery
                   platform, powered by a passionate team of gaming experts, technology pioneers, and dedicated support
                   specialists who are committed to transforming your lottery experience:
                 </p>
@@ -199,24 +198,21 @@ export default function AboutPage() {
               {[
                 {
                   quote:
-                    "I thought my phone was broken when I got the notification! Went from fixing engines to funding a technical college for underprivileged youth. Dreams really do come true!",
+                    "When I saw those winning numbers match mine, I nearly fell off my chair! I've gone from working two jobs to establishing a foundation for disadvantaged children. OZ Lotto didn't just change my life—it's changing hundreds of young lives too!",
                   name: "Marcus T.",
-                  win: "$18 Million – Gold Coast",
-                  image: "/placeholder.svg?height=100&width=100",
+                  win: "$24.3 Million – Gold Coast",
                 },
                 {
                   quote:
-                    "From night shifts to financial freedom! Now my three kids have their university funding secured, and we opened a community center in our neighborhood.",
+                    "After 15 years of night shifts as a nurse, I can finally breathe! My family has a beautiful new home, my children's education is secured, and I've opened a community health clinic in my hometown. Dreams really do come true with OZ Lotto!",
                   name: "Sarah M.",
-                  win: "$4.7 Million – Adelaide",
-                  image: "/placeholder.svg?height=100&width=100",
+                  win: "$12.8 Million – Adelaide",
                 },
                 {
                   quote:
-                    "Retirement just got an incredible upgrade! From camping weekends to owning a luxury yacht. Still religiously play every Tuesday — it's become our family tradition!",
+                    "We've played the same numbers for 20 years—our anniversary and children's birthdays. When they finally hit, our retirement transformed overnight! From a modest pension to traveling the world and helping our grandchildren buy their first homes. Tuesday is still our lucky day!",
                   name: "The Wilson Family",
-                  win: "$62 Million – Perth",
-                  image: "/placeholder.svg?height=100&width=100",
+                  win: "$45.7 Million – Perth",
                 },
               ].map((testimonial, index) => (
                 <Card
@@ -225,17 +221,6 @@ export default function AboutPage() {
                   style={{ animationDelay: `${index * 200}ms` }}
                 >
                   <CardContent className="p-8">
-                    <div className="flex justify-center mb-6">
-                      <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-blue-500 animate-pulse-glow">
-                        <Image
-                          src={testimonial.image || "/placeholder.svg"}
-                          alt={testimonial.name}
-                          width={100}
-                          height={100}
-                          className="object-cover"
-                        />
-                      </div>
-                    </div>
                     <p className="text-gray-700 italic mb-6">{testimonial.quote}</p>
                     <div className="text-center">
                       <p className="font-bold text-blue-900">{testimonial.name}</p>
