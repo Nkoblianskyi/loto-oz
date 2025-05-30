@@ -41,9 +41,9 @@ export default function HomePage() {
               </h1>
 
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 max-w-4xl mx-auto hover:bg-white/20 transition-all duration-300 animate-fade-in-up animation-delay-400">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">🇦🇺 AUSTRALIA'S #1 LOTTERY EXPERIENCE</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">AUSTRALIA'S #1 LOTTERY EXPERIENCE</h2>
                 <p className="text-lg md:text-xl leading-relaxed">
-                  Join millions of Aussies chasing life-changing jackpots every week. From Sydney to Perth, dreams come
+                  Join millions of Aussies chasing life-changing jackpots every week. Dreams come
                   true with OZ Lotto!
                 </p>
               </div>
@@ -61,7 +61,7 @@ export default function HomePage() {
                 onClick={() => router.push("/login")}
                 className="bg-red-600 hover:bg-red-700 text-white px-12 py-6 text-xl font-bold rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse-glow"
               >
-                🎫 PLAY NOW
+                🎫 PLAY NOW  <Image src="/images/oz-lotto-logo.png" alt="OZ Lotto" width={20} height={20} className="h-12 w-auto" />
               </Button>
               <Button
                 size="lg"
@@ -99,14 +99,15 @@ export default function HomePage() {
       <section className="bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center space-y-12">
-            <div className="space-y-4 animate-fade-in-up">
+            <div className="space-y-4 animate-fade-in-up flex flex-col items-center">
               <h2 className="text-5xl font-bold text-blue-900">What is OZ Lotto?</h2>
               <div className="w-24 h-1 bg-red-600 mx-auto rounded-full animate-expand"></div>
+              <Image src="/images/oz-lotto-logo.png" alt="OZ Lotto" width={30} height={30} className="h-12 w-auto" />
             </div>
 
             <div className="bg-gradient-to-r from-blue-50 to-red-50 rounded-3xl p-8 border-2 border-blue-100 animate-fade-in-up animation-delay-200 hover:shadow-xl transition-shadow duration-300">
               <p className="text-xl text-gray-700 leading-relaxed mb-8">
-                🇦🇺 <strong>Australia's Premier National Lottery</strong> - Born in 1994, OZ Lotto has been making Aussie
+                <strong>Australia's Premier National Lottery</strong> - Born in 1994, OZ Lotto has been making Aussie
                 dreams come true for over 25 years! Every Tuesday night at 8:30pm AEST, we draw 7 winning numbers plus 2
                 supplementary numbers, creating 7 different ways to win.
               </p>
@@ -153,8 +154,9 @@ export default function HomePage() {
       <section className="bg-gradient-to-r from-blue-900 to-red-800 py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center space-y-12">
-            <div className="space-y-4 animate-fade-in-up">
+            <div className="space-y-4 animate-fade-in-up flex flex-col items-center">
               <h2 className="text-5xl font-bold text-white">How to Play OZ Lotto</h2>
+              <Image src="/images/oz-lotto-logo.png" alt="OZ Lotto" width={120} height={60} className="h-12 w-auto" />
               <div className="w-24 h-1 bg-white mx-auto rounded-full animate-expand"></div>
               <p className="text-xl text-white/90">
                 It's as easy as 1-2-3! Follow these simple steps to start your winning journey
@@ -212,8 +214,9 @@ export default function HomePage() {
       <section className="bg-gradient-to-r from-red-50 to-blue-50 py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto space-y-12">
-            <div className="text-center space-y-4 animate-fade-in-up">
+            <div className="text-center space-y-4 animate-fade-in-up flex flex-col items-center">
               <h2 className="text-5xl font-bold text-blue-900">Why Choose OZ Lotto?</h2>
+              <Image src="/images/oz-lotto-logo.png" alt="OZ Lotto" width={120} height={60} className="h-12 w-auto" />
               <div className="w-24 h-1 bg-red-600 mx-auto rounded-full animate-expand"></div>
               <p className="text-xl text-gray-700">Trusted by millions of Australians for over 25 years</p>
             </div>
@@ -258,7 +261,7 @@ export default function HomePage() {
             </div>
 
             <div className="bg-gradient-to-r from-blue-900 to-red-800 rounded-3xl p-8 text-center text-white animate-fade-in-up animation-delay-800 hover:scale-105 transition-transform duration-300">
-              <h3 className="text-3xl font-bold mb-4">🇦🇺 Proudly Australian</h3>
+              <h3 className="text-3xl font-bold mb-4"><Image src="/images/oz-lotto-logo.png" alt="OZ Lotto" width={40} height={40} className="h-12 w-auto" />Proudly Australian</h3>
               <p className="text-xl mb-6">
                 OZ Lotto is 100% Australian owned and operated. When you play, you're supporting local communities and
                 helping fund important causes across the country.
@@ -278,9 +281,10 @@ export default function HomePage() {
       <section className="bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center space-y-12">
-            <div className="space-y-4 animate-fade-in-up">
+            <div className="space-y-4 animate-fade-in-up flex flex-col items-center">
               <h2 className="text-5xl font-bold text-blue-900">What Can You Win?</h2>
               <div className="w-24 h-1 bg-red-600 mx-auto rounded-full animate-expand"></div>
+              <Image src="/images/oz-lotto-logo.png" alt="OZ Lotto" width={30} height={30} className="h-14 w-auto" />
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -295,11 +299,10 @@ export default function HomePage() {
               ].map((prize, index) => (
                 <Card
                   key={index}
-                  className={`border-2 transition-all duration-300 hover:shadow-xl hover:scale-105 animate-fade-in-up ${
-                    prize.highlight
-                      ? "border-red-400 bg-gradient-to-br from-red-50 to-blue-50 animate-pulse-glow"
-                      : "border-blue-200 hover:border-red-400"
-                  }`}
+                  className={`border-2 transition-all duration-300 hover:shadow-xl hover:scale-105 animate-fade-in-up ${prize.highlight
+                    ? "border-red-400 bg-gradient-to-br from-red-50 to-blue-50 animate-pulse-glow"
+                    : "border-blue-200 hover:border-red-400"
+                    }`}
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <CardHeader>
@@ -326,9 +329,10 @@ export default function HomePage() {
       <section className="bg-gradient-to-r from-blue-50 to-red-50 py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center space-y-12">
-            <div className="space-y-4 animate-fade-in-up">
+            <div className="space-y-4 animate-fade-in-up  flex flex-col items-center">
               <h2 className="text-5xl font-bold text-blue-900">Recent Aussie Winners</h2>
               <div className="w-24 h-1 bg-red-600 mx-auto rounded-full animate-expand"></div>
+              <Image src="/images/oz-lotto-logo.png" alt="OZ Lotto" width={30} height={30} className="h-12 w-auto" />
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">

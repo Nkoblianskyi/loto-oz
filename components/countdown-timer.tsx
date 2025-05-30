@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Card } from "@/components/ui/card"
+import Image from "next/image"
 
 interface TimeLeft {
   days: number
@@ -16,18 +17,18 @@ export function CountdownTimer() {
   const [drawDate, setDrawDate] = useState("")
 
   useEffect(() => {
-    const getNextWednesday = () => {
+    const getNextTuesday = () => {
       const now = new Date()
-      const nextWednesday = new Date()
-      const daysUntilWednesday = (3 - now.getDay() + 7) % 7 || 7
-      nextWednesday.setDate(now.getDate() + daysUntilWednesday)
-      nextWednesday.setHours(20, 30, 0, 0) // 8:30 PM draw time
-      return nextWednesday
+      const nextTuesday = new Date()
+      const daysUntilTuesday = (2 - now.getDay() + 7) % 7 || 7 // Tuesday is day 2
+      nextTuesday.setDate(now.getDate() + daysUntilTuesday)
+      nextTuesday.setHours(20, 30, 0, 0) // 8:30 PM draw time
+      return nextTuesday
     }
 
     const updateCountdown = () => {
       const now = new Date()
-      const nextDraw = getNextWednesday()
+      const nextDraw = getNextTuesday()
 
       if (now > nextDraw) {
         nextDraw.setDate(nextDraw.getDate() + 7)
@@ -66,7 +67,8 @@ export function CountdownTimer() {
       <div className="text-center space-y-4">
         <div className="flex items-center justify-center gap-2 text-white">
           <div className="w-2 h-2 bg-white rounded-full animate-ping"></div>
-          <span className="text-lg font-bold animate-pulse">🇦🇺 NEXT DRAW</span>
+          <span className="text-lg font-bold animate-pulse">NEXT DRAW</span>
+          <Image src="/images/oz-lotto-logo.png" alt="OZ Lotto" width={50} height={50} className="h-12 w-auto" />
           <div className="w-2 h-2 bg-white rounded-full animate-ping animation-delay-500"></div>
         </div>
 
