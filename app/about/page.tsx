@@ -200,19 +200,19 @@ export default function AboutPage() {
                   quote:
                     "When I saw those winning numbers match mine, I nearly fell off my chair! I've gone from working two jobs to establishing a foundation for disadvantaged children. OZ Lotto didn't just change my life—it's changing hundreds of young lives too!",
                   name: "Marcus T.",
-                  win: "$24.3 Million – Gold Coast",
+                  win: "$24.3 Million – Melbourne, VIC",
                 },
                 {
                   quote:
                     "After 15 years of night shifts as a nurse, I can finally breathe! My family has a beautiful new home, my children's education is secured, and I've opened a community health clinic in my hometown. Dreams really do come true with OZ Lotto!",
                   name: "Sarah M.",
-                  win: "$12.8 Million – Adelaide",
+                  win: "$12.8 Million – Geelong, VIC",
                 },
                 {
                   quote:
                     "We've played the same numbers for 20 years—our anniversary and children's birthdays. When they finally hit, our retirement transformed overnight! From a modest pension to traveling the world and helping our grandchildren buy their first homes. Tuesday is still our lucky day!",
                   name: "The Wilson Family",
-                  win: "$45.7 Million – Perth",
+                  win: "$45.7 Million – Ballarat, VIC",
                 },
               ].map((testimonial, index) => (
                 <Card
